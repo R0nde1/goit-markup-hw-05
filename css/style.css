@@ -45,8 +45,6 @@ button {
     cursor: pointer;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -74,19 +72,6 @@ body {
     color: var(--primary-text-color);
 }
 
-.button-primary {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    padding: 6px 25px;
-    color: var(--wh-text-color);
-    background-color: var(--accent);
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-}
-
 .button-secondary {
     font-weight: 700;
     font-size: 16px;
@@ -94,20 +79,21 @@ body {
     letter-spacing: 0.06em;
     border-radius: 4px;
     padding: 6px 22px;
-    color: var(--title-text-color);
     background-color: var(--secondary-button-color);
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color;
+    color: var(--title-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: transparent;
 }
+
 
 .button-primary:hover,
 .button-primary:focus {
     color: var(--title-text-color);
     background-color: var(--secondary-button-color);
-    outline: transparent;
-
 }
 
 .button-secondary:hover,
@@ -208,7 +194,6 @@ body {
 }
 
 .contacts-bar-mail-to {
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -225,7 +210,6 @@ body {
 }
 
 .wrapper-mail-container-vector {
-
     margin-right: 10px;
     fill: var(--primary-text-color);
 }
@@ -263,26 +247,22 @@ body {
 .wrapper-nav-item:focus {
     cursor: pointer;
     color: var(--accent);
-
 }
 
 .contacts-bar-mail-to:hover .wrapper-mail-container-vector,
 .contacts-bar-mail-to:focus .wrapper-mail-container-vector {
     fill: var(--accent);
-
 }
 
 .contacts-bar-mail-to:hover,
 .contacts-bar-mail-to:focus {
     cursor: pointer;
     color: var(--accent);
-
 }
 
 .contacts-bar-tel:hover .wrapper-tel-container-vector,
 .contacts-bar-tel:focus .wrapper-tel-container-vector {
     fill: var(--accent);
-
 }
 
 .contacts-bar-tel:hover,
@@ -325,13 +305,10 @@ body {
     top: 0;
     left: 0;
     z-index: var(--backdrop-idx);
-
     width: 100%;
     height: 100%;
-
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(1px);
-
     transition: opacity 250ms, visibility 250ms;
 }
 
@@ -346,14 +323,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-
     width: 528px;
     min-height: 581px;
-
     background-color: var(--primary-bg-color);
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
     transition: opacity 150ms ease 400ms, transform 150ms ease 400ms;
 }
 
@@ -364,7 +338,6 @@ body {
 
 .close-modal {
     display: flex;
-
     position: absolute;
     top: 10px;
     right: 10px;
@@ -380,7 +353,6 @@ body {
 .modal-cross:hover {
     fill: var(--accent);
     border-color: var(--accent);
-
 }
 
 /* Button */
@@ -417,7 +389,6 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -474,7 +445,6 @@ body {
 /* What-do-we-do */
 
 .what-do-we-do-container {
-
     margin: 0 auto;
     padding-bottom: 94px;
 }
@@ -528,7 +498,6 @@ body {
 /* Our-team */
 
 .our-team-container {
-
     padding-top: 94px;
     padding-bottom: 94px;
     background: var(--secondary-button-color)
@@ -542,8 +511,6 @@ body {
     padding-bottom: 50px;
     color: var(--title-text-color)
 }
-
-
 
 .our-team-list-header {
     font-weight: 500;
@@ -590,10 +557,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 44px;
     height: 44px;
-
     background-color: var(--primary-bg-color);
     border-radius: 50%;
     transition-duration: 250ms;
@@ -605,7 +570,6 @@ body {
 .socials-link:focus {
     background-color: var(--accent);
     outline: transparent;
-
 }
 
 .socials-icon {
@@ -620,15 +584,10 @@ body {
     fill: var(--wh-text-color);
 }
 
-
-
 /* Regular Clients */
 
 .regular-clients-container {
-
-
     margin: 0 auto;
-
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--primary-bg-color)
@@ -686,7 +645,6 @@ body {
 /* Footer */
 
 .footer {
-
     background-color: var(--tertiary-bg-color);
 }
 
@@ -715,7 +673,6 @@ body {
 }
 
 .address-container {
-
     margin-right: 70px;
 }
 
@@ -762,28 +719,24 @@ body {
 .footer-physical-address:focus {
     cursor: pointer;
     color: var(--accent);
-
 }
 
 .footer-mail-to:hover,
 .footer-mail-to:focus {
     cursor: pointer;
     color: var(--accent);
-
 }
 
 .footer-tel:hover,
 .footer-tel:focus {
     cursor: pointer;
     color: var(--accent);
-
 }
 
 .footer-socials {
     width: 206px;
     height: 80px;
     margin-top: 12px;
-
 }
 
 .footer-socials-header {
@@ -799,12 +752,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 44px;
     height: 44px;
-
     background-color: rgba(255, 255, 255, 0.1);
-
     border-radius: 50%;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -813,22 +763,17 @@ body {
 
 .footer-socials-icon {
     fill: var(--wh-text-color);
-
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: var(--accent);
     outline: transparent;
-
 }
-
-
 
 .footer-socials-link:hover .socials-icon {
     fill: var(--wh-text-color);
 }
-
 
 /* portfolio */
 
@@ -845,8 +790,6 @@ body {
     padding-bottom: 50px;
 }
 
-
-
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -861,8 +804,6 @@ body {
     border-bottom: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
 }
-
-
 
 .portfolio-list-header {
     margin-bottom: 4px;
@@ -881,17 +822,11 @@ body {
     color: var(--primary-text-color);
 }
 
-
-
 .portfolio-cards-overlay-box {
     position: relative;
     width: 370px;
-
     margin-left: auto;
     margin-right: auto;
-
-
-
     overflow: hidden;
 }
 
