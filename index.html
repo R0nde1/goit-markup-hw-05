@@ -78,7 +78,22 @@
         <section class="head">
             <div class="container">
                 <h1 class="hero">Ефективні рішення для<br> вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button class="hero-button" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
+
+                    <div class="backdrop">
+                        <div class="modal">
+                            <p class="modal-container"></p>
+                            <button class="modal-cross" data-modal-close><svg class='modal-cross' width='15'
+                                    height='15'>
+                                    <use href='./img/svg/icons.svg#icon-cross'></use>
+                                </svg></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
 
 
@@ -149,9 +164,24 @@
             <div class="container">
                 <h2 class="what-do-we-do-header">Чим ми займаємося</h2>
                 <ul class="what-do-we-do-container-list list">
-                    <li><img src="./img/programming.jpg" alt="Програмування" width="370"></li>
-                    <li><img src="./img/design.jpg" alt="Дизайн" width="370"></li>
-                    <li><img src="./img/layout.jpg" alt="Верстка" width="370"></li>
+                    <li>
+                        <div class="what-do-we-do-img-container"><img src="./img/desktop-apps.jpg"
+                                alt="Десктопні додатки" width="370">
+                            <p class="what-do-we-do-text-container">Десктопні додатки</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="what-do-we-do-img-container"><img src="./img/design.jpg" alt="Дизайнерські рішення"
+                                width="370">
+                            <p class="what-do-we-do-text-container">Дизайнерські рішення</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="what-do-we-do-img-container"><img src="./img/mobile-apps.jpg" alt="Мобільні додатки"
+                                width="370">
+                            <p class="what-do-we-do-text-container">Мобільні додатки</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
@@ -386,6 +416,7 @@
             </div>
         </section>
     </main>
+    <script src="./js/modal.js"></script>
 </body>
 
 <!-- footer -->
